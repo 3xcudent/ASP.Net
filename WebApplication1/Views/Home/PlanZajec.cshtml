@@ -1,0 +1,35 @@
+﻿@model List<WebApplication1.DAL.Models.Zajecia>
+<h1>Plan zajęć</h1>
+<hr/>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Czas 
+            </th>
+            <th>
+                Miejsce 
+            </th>
+            <th>
+                Nazwa 
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{foreach (var item in Model){
+                <tr>
+                    <td>
+                        @item.ID 
+                    </td>
+                    <td>
+                        @item.NazwaZajec 
+                    </td>
+                    <td>
+                        @item.TerminZajec 
+                    </td>
+                </tr>
+
+           }
+        }
+    </tbody>
+</table>
