@@ -8,8 +8,14 @@ namespace WebApplication1.DAL.Models
 {
     public class Zajecia
     {
+        public Zajecia(string nazwaZajec, DateTime terminZajec)
+        {
+            NazwaZajec = nazwaZajec;
+            TerminZajec = terminZajec;
+        }
+
         public int ID { get; set; }
-        public string NazwaZajec {get;set;}
+        public string NazwaZajec {get; set;}
         public DateTime TerminZajec { get; set; }
     }
     

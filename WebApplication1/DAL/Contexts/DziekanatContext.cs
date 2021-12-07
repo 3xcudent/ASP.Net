@@ -14,7 +14,7 @@ namespace WebApplication1.DAL.Contexts
         {
 
         }
-        public DbSet<Zajecia> Zajecia {get;set;}
+        public DbSet<Zajecia> Zajecia {get; set; }
         public DbSet<Student> Student { get; set; }
     }
 }
